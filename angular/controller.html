@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <title>Angular ng-contoller Directive</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script>
+        var app=angular.module('myApp',[]);
+        app.controller('myCtrl',function($scope){
+            $scope.firstName='Swetha';
+            $scope.lastName='Iyer';
+
+        });
+    </script>
+</head>
+<body>
+    <center>
+        <h1 style="color:green">VARTAK COLLEGE</h1>
+        <h2>ng-controller Directive</h2>
+        <div ng-app="myApp" ng-controller="myCtrl">
+            FirstName:<input type="text" ng-model="firstName">
+            <br>LastName:<input type="text" ng-model="lastName">
+            <br><br>
+            Full Name:{{firstName+"for"+lastName}}
+        </div>
+    </center>
+</body> 
+</html>

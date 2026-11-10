@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <title>Form</title>
+    <head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <p>Click on VARTK COLLEGE to increase the total count </p>
+    <div ng-app="App1" ng-controller="Ctrl1">
+        <button ng-click="count=count+1">VARTAK COLLEGE</button>
+        <h2>Total count</h2>
+        <h2>{{count}}</h2>
+    </div>
+    <script>
+        var app=angular.module('App1',[]);
+        app.controller('Ctrl1',function($scope){
+                $scope.count=0;
+        });
+    </script>
+</body>
+</html>

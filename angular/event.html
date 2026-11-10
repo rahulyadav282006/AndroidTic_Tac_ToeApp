@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <title>Form</title>
+    <head>
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        </head>
+        <body>
+            <p>Move the mouse over VARTEK COLLEGE to in crease the total count </p>
+            <div ng-app="App1" ng-controller="Ctrl1">
+                <h1 ng-mousemove="count=count+1">VARTAK COLLEGE</h1>
+                <h2> Total Count</h2>
+                <h2></h2>{{count}}</h2>
+        
+            </div>
+            <script>
+                var app=angular.module('App1',[]);
+                app.controller('Ctrl1',function($scope){ $scope.count=0;
+                });
+            </script>
+        </body>
+</html>
